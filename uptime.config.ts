@@ -2,11 +2,10 @@ import { MaintenanceConfig, PageConfig, WorkerConfig } from './types/config'
 
 const pageConfig: PageConfig = {
   // Title for your status page
-  title: CF_Status Page",
+  title: CF Status Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
     { link: 'https://github.com/htuao', label: 'GitHub' },
-    { link: 'https://blog.lyc8503.net/', label: 'Blog' },
     { link: 'mailto:mail@mail.gouer.eu.org', label: 'Email Me', highlight: true },
   ],
   // [OPTIONAL] Group your monitors
@@ -34,7 +33,7 @@ const workerConfig: WorkerConfig = {
   // [Optional] Write KV at most every N minutes unless the status changed, default to 3
   kvWriteCooldownMinutes: 3,
   // Enable HTTP Basic auth for status page & API by uncommenting the line below, format `<USERNAME>:<PASSWORD>`
-  // passwordProtection: 'username:password',
+  passwordProtection: 'status:mtjb1D..',
   // Define all your monitors here
   monitors: [
     // Example HTTP Monitor
